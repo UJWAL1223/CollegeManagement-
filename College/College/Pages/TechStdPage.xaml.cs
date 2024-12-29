@@ -6,4 +6,16 @@ public partial class TechStdPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	private async void OnTechStdClicked(object sender, EventArgs e)
+	{
+
+		if (sender is Button)
+		{
+
+			await Shell.Current.GoToAsync("LogInPage");
+
+		}
+
+	}
 }
