@@ -9,6 +9,7 @@ namespace College
             InitializeComponent();
             Routing.RegisterRoute("TechStdPage", typeof(TechStdPage));
             Routing.RegisterRoute("LogInPage", typeof(LogInPage));
+            Routing.RegisterRoute("FacultyPage", typeof(FacultyPage));
         }
     }
 }

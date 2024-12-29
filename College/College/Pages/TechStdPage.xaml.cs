@@ -10,10 +10,18 @@ public partial class TechStdPage : ContentPage
 	private async void OnTechStdClicked(object sender, EventArgs e)
 	{
 
-		if (sender is Button)
+		if (sender is Button clickedBtn)
 		{
+			string currentBtn = clickedBtn.ClassId;
 
-			await Shell.Current.GoToAsync("LogInPage");
+			if(currentBtn == "TechBtn")
+			{
+				await Shell.Current.GoToAsync("LogInPage");
+			}
+			else if(currentBtn == "StdBtn")
+			{
+				await Shell.Current.GoToAsync("FacultyPage");
+			}
 
 		}
 
