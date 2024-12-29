@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="College.Pages.FacultyPage"
-             Title="FacultyPage">
+             BackgroundColor="White">
 
 
     <Grid>
@@ -10,7 +10,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="50" />
+            <RowDefinition Height="80" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="100" />
             <RowDefinition Height="Auto" />
@@ -20,78 +20,93 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
 
         <Button 
+            Text="Choose Faculty"
             Grid.Row="1"
-            Grid.Column="1"
+            Grid.Column="2"
             CornerRadius="20"
             VerticalOptions="Center"
             HorizontalOptions="Center"
             BackgroundColor="Black"
             WidthRequest="200"
-            Text="Choose Faculty"
             TextColor="White"
             FontSize="Small"
+            IsEnabled="False"
         />
 
 
 
         <Button 
-        Grid.Row="3"
-        Grid.Column="1"
-        CornerRadius="20"
-        VerticalOptions="Center"
-        HorizontalOptions="Center"
-        WidthRequest="200"
-        Text="Enter Password"
-        BackgroundColor="Black"
-        TextColor="White"
-        FontSize="Small"
-        IsEnabled="False"
-    />
+            Text="Architecture"
+            x:Name="ArchFacBtn"
+            ClassId="ArchFacBtn"
+            Grid.Row="3"
+            Grid.Column="1"
+            CornerRadius="20"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            WidthRequest="200"
+            BackgroundColor="Black"
+            TextColor="White"
+            FontSize="Small"
+        />
 
 
         <Button
-        Text="Reset"
-        x:Name="ResetBtn"
-        ClassId="ResetBtn"
-        Grid.Row="5"
-        Grid.Column="1"
-        VerticalOptions="Center"
-        HorizontalOptions="Center"
-        BackgroundColor="Black"
-        TextColor="White" 
-        WidthRequest="200"
-        FontSize="Small"
-        CornerRadius="20"
-        IsEnabled="False"
-    />
+            Text="Civil"
+            x:Name="CivilFacBtn"
+            ClassId="CivilFacBtn"
+            Grid.Row="5"
+            Grid.Column="1"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            BackgroundColor="Black"
+            TextColor="White" 
+            WidthRequest="200"
+            FontSize="Small"
+            CornerRadius="20"
+        />
 
-
-
-
+        <Button
+            Text="Computer"
+            x:Name="ComFacBtn"
+            ClassId="ComFacBtn"
+            Grid.Row="3"
+            Grid.Column="3"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            BackgroundColor="Black"
+            TextColor="White" 
+            WidthRequest="200"
+            FontSize="Small"
+            CornerRadius="20"
+        />
 
 
         <Button
-        Text="Log In"
-        x:Name="LogInBtn"
-        ClassId="LogInBtn"
-        Grid.Row="5"
-        Grid.Column="3"
-        VerticalOptions="Center"
-        HorizontalOptions="Center"
-        BackgroundColor="Black"
-        TextColor="White" 
-        WidthRequest="200"
-        FontSize="Small"
-        CornerRadius="20"
-    />
+            Text="Electrical"
+            x:Name="EleFacBtn"
+            ClassId="EleFacBtn"
+            Grid.Row="5"
+            Grid.Column="3"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            BackgroundColor="Black"
+            TextColor="White" 
+            WidthRequest="200"
+            FontSize="Small"
+            CornerRadius="20"
+            IsEnabled="False"
+        />
 
+
+        
     </Grid>
 
 
